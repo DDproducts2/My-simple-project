@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #141212;
+}
+.card {
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  flex-direction: column;
+  height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+.e-c {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 7vw;
+  background-color: #000000;
+  border-radius: 20px;
+}
+.item {
+  margin: 2px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.item input {
+  height: 35px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid transparent;
+  background-color: transparent;
+  transition: 2s ease-in;
+  color: yellow;
+  animation: 2s colorchange ease infinite;
+}
+
+@keyframes colorchange {
+  0% {
+    color: red;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: red;
+  }
+}
+.button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+input:focus {
+  outline: none;
+  border: none;
+  border-radius: 0%;
+  /* background-color: #bcbcbc; */
+  transition: 2s ease-in-out;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    45deg,
+    yellowgreen,
+    green,
+    yellow,
+    pink,
+    #ff2323
+  );
+  border-image-slice: 1;
+  color: red;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  color: #ffffff;
+  border: none;
+  outline: none;
+  transition: 0.4s ease;
+  text-align: center;
+}
+
+h2:hover {
+  color: red;
+  background-color: yellow;
+  text-align: center;
+  cursor: pointer;
+}
+.submit {
+  transition: 0.5s ease;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 7px;
+}
+.submit:hover {
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.card .e-c .item h1 {
+  color: white;
+}
+.profile button {
+  padding: 8px;
+  margin: 4px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  transition: 0.5s ease;
+  border: 2px solid transparent;
+}
+.profile button:hover {
+  transition: 0.5s ease;
+  color: yellow;
+  background-color: red;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(180deg, yellow, blue, purple);
+  border-image-slice: 1;
+}
+.h1edit {
+  cursor: pointer;
+  transition: 0.5s ease;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.h1edit:hover {
+  transition: 0.5s ease;
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+}
+.wide {
+  width: 17vw;
+}
+.item select {
+  padding: 7px;
+  font-size: medium;
+}
+
+.item option {
+  padding: 7px;
+  font-size: medium;
+  margin: 5px;
+  outline: none;
+  border: none;
+}
+.item option:focus {
+  outline: none;
+  border: none;
+}
+
+.hide {
+  display: none;
+}
+
+

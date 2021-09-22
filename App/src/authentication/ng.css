@@ -1,0 +1,54 @@
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  /* color: red; */
+  animation: 10s changeclr infinite ease-in-out;
+}
+@keyframes changeclr {
+  0% {
+    color: white;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: white;
+  }
+}
+.resend {
+  border: none;
+  border-bottom: 3px solid purple;
+  cursor: pointer;
+  transition: 1s ease;
+}
+.resend:hover {
+  background-color: purple;
+  transition: 1s ease;
+  color: white;
+}
+.itemc {
+  color: white;
+}
+.button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+@media (max-width: 750px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 549px) {
+  h3 {
+    font-size: 1rem;
+  }
+}

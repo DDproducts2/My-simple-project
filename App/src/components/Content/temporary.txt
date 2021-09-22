@@ -1,0 +1,63 @@
+  function dontlop() {
+    
+    const db = getDatabase();
+    var reference = ref(db, 'users/' + mdmd)
+    set(reference, {
+      username: 'name',
+      email: 'email',
+      profile_picture: 'imageUrl'
+    });
+    
+   onValue(reff, (data) => {
+    if (data.value === undefined){
+      window.alert('No data With The parameters')
+
+    }
+
+    else{
+      console.log(data.val().email)
+
+    }
+  })
+  }
+  
+ 
+import { getDatabase, ref, set, onValue } from 'firebase/database';
+    <div className='card'>
+        <div className='e-c'>
+            <div className='item'>
+                
+            </div>
+        </div>
+    </div>
+    <div className='item'>
+    
+    </div>
+    toast.default('', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+    });
+
+    const db = getDatabase();
+    var hellocuy = ref(db, 'users/')
+    set(hellocuy, {
+      username: 'name',
+      email: 'email',
+      profile_picture: 'imageUrl'
+    });
+    const db = getDatabase();
+    var hello sfgfdfdgfdf = ref(db, 'users/')
+    onValue(hello sfgfdfdgfdf, (data) => {
+                if (data.value === undefined){
+                    window.alert('No data With The parameters')
+                }
+                else{
+                    console.log(data.val().email)
+                }
+            })
+        }
